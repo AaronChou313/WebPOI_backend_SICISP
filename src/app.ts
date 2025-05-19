@@ -10,7 +10,7 @@
  */
 import express from 'express';
 import { sequelize }   from './config/db';
-
+import cors from 'cors';
 import { sitesRouter }     from './routes/sites';
 import { searchRouter }    from './routes/search';
 import { provinceRouter } from './routes/province';
@@ -19,6 +19,7 @@ import { nearbyRouter } from './routes/nearby';
 
 const app = express();
 app.use(express.json());
+app.use(cors());
 
 // 注册子路由
 app.use('/sites',  sitesRouter);
