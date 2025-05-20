@@ -25,17 +25,8 @@ backend/
 │  │   └─ nearby.ts              # /nearby (中心点 + 半径)
 │  │
 │  ├─ utils/
-│  │   └─ paginator.ts           # 通用分页工具 { limit, offset }
-│  │
-│  ├─ services/                  # 可选：复杂业务逻辑再下沉
-│  │   └─ site.service.ts
-│  │
-│  └─ types/                     # 全局类型声明（如需）
-│      └─ index.d.ts
-│
-├─ test/                         # Jest + supertest 自动化测试
-│   └─ app.test.ts
-│
+│      └─ paginator.ts           # 通用分页工具 { limit, offset }
+│ 
 ├─ .env                          # DB_HOST / DB_USER / DB_PASS / PORT ...
 ├─ tsconfig.json                 # TypeScript 编译配置
 ├─ package.json                  # 依赖 & npm scripts
